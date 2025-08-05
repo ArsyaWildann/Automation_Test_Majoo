@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Test-002 Kendala Transaksi Pisah Jumlah</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9d9102d0-1b22-4878-9c66-b4855574da88</testCaseGuid>
+</TestCaseEntity>
