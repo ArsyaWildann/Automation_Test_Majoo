@@ -12,14 +12,14 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>6b3b8eb6-f60b-4daa-9560-60924ced9a5a</testSuiteGuid>
    <testCaseLink>
-      <guid>2ec27d72-58d9-4100-8e6a-05e36a51f681</guid>
+      <guid>3576bbb7-661f-44d6-a665-feeee6679538</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Test-001 PIN</testCaseId>
+      <testCaseId>Test Cases/Test001 - PIN Page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2bcc3037-ad5c-40dd-bc63-ac847d248b9c</guid>
+      <guid>90ce655c-37a9-47bb-a1c6-bd0f3b549c63</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Test005 - Komplimen</testCaseId>

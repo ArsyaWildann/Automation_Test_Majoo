@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Test-001 PIN</name>
+   <name>Test001 - PIN Page</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>6424496d-8563-4b0b-99c2-519a7702f204</testCaseGuid>
+   <testCaseGuid>741723d8-c589-4530-9580-242f38a47f41</testCaseGuid>
 </TestCaseEntity>

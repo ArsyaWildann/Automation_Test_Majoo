@@ -77,7 +77,7 @@ boolean scrollSampeMentok(int width, int height, int maxSwipe, int delaySeconds)
 Mobile.startExistingApplication('com.klopos')
 
 // Pilih produk dan bayar
-Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/CHEESYDOG'), 0)
+Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/CHEESY_DOG'), 0)
 Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/BAYAR'), 0)
 
 // Pilih metode pembayaran
@@ -111,6 +111,7 @@ Mobile.setText(findTestObject('Object Repository/MINUS_KOMPLIMEN/21900'), '21900
 AndroidDriver driver = MobileDriverFactory.getDriver()
 driver.pressKey(new KeyEvent(AndroidKey.ENTER))
 
+// Tap view untuk lanjut
 Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/android.view.View'), 0)
 
 // PILIH USER

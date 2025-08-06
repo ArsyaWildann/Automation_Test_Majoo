@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Test-002 Kendala Transaksi Pisah Jumlah</name>
+   <name>Test002 - Kendala Transaksi Pisah Jumlah</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
