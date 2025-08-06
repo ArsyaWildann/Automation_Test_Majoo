@@ -19,10 +19,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>90ce655c-37a9-47bb-a1c6-bd0f3b549c63</guid>
+      <guid>3c1aef17-0e74-484f-833e-6258dc85826e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Test005 - Komplimen</testCaseId>
+      <testCaseId>Test Cases/Test002 - Kendala Transaksi Pisah Jumlah</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

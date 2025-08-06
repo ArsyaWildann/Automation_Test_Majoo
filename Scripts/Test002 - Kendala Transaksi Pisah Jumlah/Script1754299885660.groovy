@@ -3,58 +3,86 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.testobject.TestObject as TestObject
+
+// === FUNGSI SCROLL ===
+def scrollKiriLayar() {
+    int width = Mobile.getDeviceWidth()
+    int height = Mobile.getDeviceHeight()
+    int startX = width / 10
+    int startY = height * 3 / 4
+    int endY = height / 4
+    Mobile.swipe(startX, startY, startX, endY)
+}
+
+def scrollTengahSedikit() {
+	int width = Mobile.getDeviceWidth()
+	int height = Mobile.getDeviceHeight()
+	int startX = width / 2
+	int startY = height / 2
+	int endY = startY + 400  // scroll ke bawah lebih jauh
+	Mobile.swipe(startX, startY, startX, endY)
+}
+
+
+def scrollTengahLayar() {
+    int width = Mobile.getDeviceWidth()
+    int height = Mobile.getDeviceHeight()
+    int startX = width / 2
+    int startY = height * 3 / 4
+    int endY = height / 5
+    Mobile.swipe(startX, startY, startX, endY)
+}
+
+
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+
+def scrollOrderan() {
+    int startX = 1662              // posisi horizontal elemen item
+    int startY = 600               // titik awal swipe (di atas)
+    int endY = 1000                // titik akhir swipe (di bawah)
+
+    Mobile.swipe(startX, startY, startX, endY)
+    Mobile.delay(1)
+}
+
+
+
+// === JALANKAN APLIKASI ===
 Mobile.startExistingApplication('com.klopos')
 
+// === BUKA KATEGORI DAN SCROLL KIRI ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BUTTON_KATEGORI'), 0)
+scrollKiriLayar()
 
-// Gunakan swipe manual untuk scroll ke tombol "CHEESE FOOD"
-TestObject cheeseFoodButton = findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BUTTON CHEESE FOOD')
-int maxSwipes = 10
-int swipeCount = 0
-boolean isFound = false
+// === TAP KATEGORI CHEESE FOOD (TANPA SCROLL LAGI SETELAHNYA) ===
+Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BUTTON CHEESE FOOD'), 0)
 
-while (!isFound && swipeCount < maxSwipes) {
-    if (Mobile.waitForElementPresent(cheeseFoodButton, 2)) {
-        isFound = true
-    } else {
-        Mobile.swipe(500, 1600, 500, 400)  // swipe dari bawah ke atas
-        swipeCount++
-    }
-}
-
-if (isFound) {
-    Mobile.tap(cheeseFoodButton, 0)
-} else {
-    Mobile.comment("CHEESE FOOD button not found after ${maxSwipes} swipes.")
-    assert false : "CHEESE FOOD button not found."
-}
-
+// === TAP PRODUK PERTAMA: BBQ SMOKE BEEF CHEESE ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BBQ SMOKE BEEF CHEESE'), 0)
+
+// === SCROLL TENGAH SEDIKIT UNTUK MUNCULKAN EKSTRA BAHAN ===
+scrollTengahLayar()
+
+// === TAMBAH EKSTRA BAHAN & SIMPAN ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/EKSTRA BAHAN'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SIMPAN'), 0)
+
+// === PILIH PRODUK-PRODUK ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/CHEESYDOG'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/FISHCHEESE'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/JELATACHEESE'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/JURAGANCHEESE'), 0)
+
+scrollTengahLayar()
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/NIGRATCHEESE'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PITIKCHEESE'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SULTANCHEESE'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SIMPAN (1)'), 0)
 
+// === ORDERAN 1 ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/DAFTAR ORDER'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_1'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BAYAR'), 0)
@@ -63,6 +91,7 @@ Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PISA
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/LANJUTKAN'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_1'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_2'), 0)
+scrollOrderan()
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_1'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_2'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PROSES'), 0)
@@ -70,6 +99,7 @@ Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/UANG
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PROSES_BAYAR'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SELESAI'), 0)
 
+// === ORDERAN 2 ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_2'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BAYAR'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PISAH BAYAR'), 0)
@@ -83,6 +113,7 @@ Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/UANG
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PROSES_BAYAR'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SELESAI'), 0)
 
+// === ORDERAN 3 ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_3'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_PESANAN'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/CHEESYDOG'), 0)
@@ -90,7 +121,5 @@ Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BAYA
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/UANG PAS (1)'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BACK'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/LANJUTKAN (1)'), 0)
-Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/DAFTAR ORDER'), 0)
+Mobile.tap(findTestObject('null'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_3'), 0)
-
-Mobile.closeApplication()
