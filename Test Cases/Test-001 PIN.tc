@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Test005 - Komplimen</name>
+   <name>Test-001 PIN</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>b91f4b85-f3b2-4bcc-af46-bb4eb1c179cd</testCaseGuid>
+   <testCaseGuid>6424496d-8563-4b0b-99c2-519a7702f204</testCaseGuid>
 </TestCaseEntity>

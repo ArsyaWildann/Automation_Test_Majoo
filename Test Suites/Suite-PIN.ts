@@ -12,14 +12,21 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>6b3b8eb6-f60b-4daa-9560-60924ced9a5a</testSuiteGuid>
    <testCaseLink>
-      <guid>3576bbb7-661f-44d6-a665-feeee6679538</guid>
+      <guid>b351229c-9cae-4807-b787-0ad49f9731a9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Test001 - PIN Page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>90ce655c-37a9-47bb-a1c6-bd0f3b549c63</guid>
+      <guid>0242d827-ea33-475d-a85c-02188c52e437</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Test - Jumlah Produk</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2bcc3037-ad5c-40dd-bc63-ac847d248b9c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Test005 - Komplimen</testCaseId>
