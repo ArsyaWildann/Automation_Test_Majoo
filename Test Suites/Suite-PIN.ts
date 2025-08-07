@@ -22,7 +22,7 @@
       <guid>0242d827-ea33-475d-a85c-02188c52e437</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Test - Jumlah Produk</testCaseId>
+      <testCaseId>Test Cases/Test003 - Jumlah Produk</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

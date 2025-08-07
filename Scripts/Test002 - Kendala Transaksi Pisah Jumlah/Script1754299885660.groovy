@@ -40,9 +40,12 @@ def scrollTengahLayar() {
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 
 def scrollOrderan() {
-    int startX = 1662              // posisi horizontal elemen item
-    int startY = 600               // titik awal swipe (di atas)
-    int endY = 1000                // titik akhir swipe (di bawah)
+    int deviceWidth = Mobile.getDeviceWidth()
+    int deviceHeight = Mobile.getDeviceHeight()
+
+    int startX = deviceWidth / 2
+    int startY = deviceHeight / 2       // mulai dari tengah
+    int endY = startY - 200             // scroll ke atas sedikit
 
     Mobile.swipe(startX, startY, startX, endY)
     Mobile.delay(1)
@@ -50,10 +53,12 @@ def scrollOrderan() {
 
 
 
+
+
 // === JALANKAN APLIKASI ===
 Mobile.startExistingApplication('com.klopos')
 
-// === BUKA KATEGORI DAN SCROLL KIRI ===
+ //=== BUKA KATEGORI DAN SCROLL KIRI ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BUTTON_KATEGORI'), 0)
 scrollKiriLayar()
 
@@ -90,10 +95,13 @@ Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PISA
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PISAH PRODUK'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/LANJUTKAN'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_1'), 0)
+scrollOrderan()
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_2'), 0)
 scrollOrderan()
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_1'), 0)
+scrollOrderan()
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_2'), 0)
+scrollOrderan()
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PROSES'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/UANG PAS'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PROSES_BAYAR'), 0)
@@ -121,5 +129,7 @@ Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BAYA
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/UANG PAS (1)'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BACK'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/LANJUTKAN (1)'), 0)
-Mobile.tap(findTestObject('null'), 0)
+Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/DAFTAR ORDER)'), 0)
+Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/LANJUTKAN (1)'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_3'), 0)
+scrollTengahLayar()
