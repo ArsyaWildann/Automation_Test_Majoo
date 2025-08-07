@@ -17,15 +17,6 @@ def scrollKiriLayar() {
     Mobile.swipe(startX, startY, startX, endY)
 }
 
-def scrollTengahSedikit() {
-	int width = Mobile.getDeviceWidth()
-	int height = Mobile.getDeviceHeight()
-	int startX = width / 2
-	int startY = height / 2
-	int endY = startY + 400  // scroll ke bawah lebih jauh
-	Mobile.swipe(startX, startY, startX, endY)
-}
-
 
 def scrollTengahLayar() {
     int width = Mobile.getDeviceWidth()
@@ -125,11 +116,11 @@ Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SELE
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_3'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_PESANAN'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/CHEESYDOG'), 0)
-Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BAYAR (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BAYAR_ORDERAN_3'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/UANG PAS (1)'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BACK'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/LANJUTKAN (1)'), 0)
-Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/DAFTAR ORDER)'), 0)
+Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/DAFTAR ORDER'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/LANJUTKAN (1)'), 0)
-Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_3'), 0)
+Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_TERAKHIR'), 0)
 scrollTengahLayar()
