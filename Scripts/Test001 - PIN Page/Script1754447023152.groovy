@@ -17,23 +17,53 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// ==== FUNCTION LOGIN ====
+def loginAwal() {
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_1'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/SELECT_KARYAWAN'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PILIH'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_1'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_2'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_3'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_4'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_5'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_6'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/NANTI'), 0)
+}
+
+// ==== FUNCTION BUKA KASIR ====
+def bukaKasir() {
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/BUKA_KASIR'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/SINKRONISASI'), 0)
+}
+
+// ==== FUNCTION TUTUP KASIR ====
+def tutupKasir() {
+    Mobile.tap(findTestObject('Object Repository/PIN_TUTUP_KASIR/PIN_TUTUP_KASIR(1)'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_TUTUP_KASIR/PIN_TUTUP_KASIR(2)'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_TUTUP_KASIR/PIN_TUTUP_KASIR(3)'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_TUTUP_KASIR/PIN_TUTUP_KASIR(4)'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_TUTUP_KASIR/PIN_TUTUP_KASIR(5)'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_TUTUP_KASIR/PIN_TUTUP_KASIR(6)'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_TUTUP_KASIR/LANJUTKAN'), 0)
+    Mobile.tap(findTestObject('Object Repository/PIN_TUTUP_KASIR/TUTUP_KASIR'), 0)
+}
+
+// ==== START TEST ====
 Mobile.startExistingApplication('com.klopos')
 
-Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_1'), 0)
+// Jalankan login awal
+loginAwal()
 
-Mobile.tap(findTestObject('Object Repository/PIN_PAGE/SELECT_KARYAWAN'), 0)
+// ==== CEK KONDISI TUTUP KASIR ====
+if (Mobile.verifyElementExist(findTestObject('Object Repository/PIN_TUTUP_KASIR/PIN_TUTUP_KASIR(1)'), 3, FailureHandling.OPTIONAL)) {
+    tutupKasir()
+    loginAwal() // login ulang setelah tutup kasir
+}
 
-Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PILIH'), 0)
+// ==== CEK KONDISI BUKA KASIR ====
+if (Mobile.verifyElementExist(findTestObject('Object Repository/PIN_PAGE/BUKA_KASIR'), 3, FailureHandling.OPTIONAL)) {
+    bukaKasir()
+}
 
-Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_1'), 0)
-
-Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_2'), 0)
-
-Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_3'), 0)
-
-Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_4'), 0)
-
-Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_5'), 0)
-
-Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_6'), 0)
-
+Mobile.comment('Proses selesai')

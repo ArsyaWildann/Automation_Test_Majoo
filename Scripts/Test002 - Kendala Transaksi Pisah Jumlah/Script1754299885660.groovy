@@ -3,6 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.model.FailureHandling
+
 
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.testobject.TestObject as TestObject
@@ -78,6 +80,25 @@ Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PITI
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SULTANCHEESE'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SIMPAN (1)'), 0)
 
+
+//=== CEK KONDISI DELETE ===
+
+if (Mobile.verifyElementExist(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/DAFTAR_ORDER_2'), 2, FailureHandling.OPTIONAL)) {
+    println("Data orderan lama ditemukan, proses delete...")
+
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/DAFTAR_ORDER_2'), 0, FailureHandling.OPTIONAL)
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/PESANAN_2'), 0, FailureHandling.OPTIONAL)
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/BAYAR'), 0, FailureHandling.OPTIONAL)
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/UANG_PAS'), 0, FailureHandling.OPTIONAL)
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/PROSES_BAYAR'), 0, FailureHandling.OPTIONAL)
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/SELESAI'), 0, FailureHandling.OPTIONAL)
+	Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/BACK'), 0, FailureHandling.OPTIONAL)
+
+    println("Proses delete selesai.")
+} else {
+    println("Tidak ada orderan lama, langsung ke orderan pertama...")
+    Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN 1'), 0, FailureHandling.OPTIONAL)
+}
 // === ORDERAN 1 ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/DAFTAR ORDER'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_1'), 0)
