@@ -36,6 +36,7 @@ Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/CHEESY_DOG'), 0)
 
 Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/BAYAR'), 0)
 
+
 // Pilih metode pembayaran
 Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/NONTUNAI'), 0)
 
@@ -67,11 +68,11 @@ if (found) {
 }
 
 // ISI KOMPLIMEN
-Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/android.widget.EditText - 26,500'), 0)
+Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/android.widget.EditText - 25,000'), 0)
 
-Mobile.clearText(findTestObject('Object Repository/MINUS_KOMPLIMEN/android.widget.EditText - 26,500 (1)'), 0)
+Mobile.clearText(findTestObject('Object Repository/MINUS_KOMPLIMEN/android.widget.EditText - 25,000 (1)'), 0)
 
-Mobile.setText(findTestObject('Object Repository/MINUS_KOMPLIMEN/21900'), '26400', 0)
+Mobile.setText(findTestObject('Object Repository/MINUS_KOMPLIMEN/21900'), '24900', 0)
 
 // ENTER untuk hide keyboard
 AndroidDriver driver = MobileDriverFactory.getDriver()
@@ -84,7 +85,7 @@ Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/android.view.View')
 // PILIH USER
 Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/PILIH'), 0)
 
-Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/MUHAMMADISMY'), 0)
+Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/NASRUL_FAIZ'), 0)
 
 Mobile.setText(findTestObject('Object Repository/MINUS_KOMPLIMEN/PIN'), '123456', 0)
 

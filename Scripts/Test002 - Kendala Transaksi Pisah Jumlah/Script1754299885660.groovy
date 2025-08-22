@@ -4,8 +4,6 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.model.FailureHandling
-
-
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.testobject.TestObject as TestObject
 
@@ -30,7 +28,6 @@ def scrollTengahLayar() {
 }
 
 
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 
 def scrollOrderan() {
     int deviceWidth = Mobile.getDeviceWidth()
@@ -87,7 +84,7 @@ if (Mobile.verifyElementExist(findTestObject('Object Repository/DELETE_DAFTAR_OR
     println("Data orderan lama ditemukan, proses delete...")
 
     Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/DAFTAR_ORDER_2'), 0, FailureHandling.OPTIONAL)
-    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/PESANAN_2'), 0, FailureHandling.OPTIONAL)
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/PESANAN_2'), 0, FailureHandling.OPTIONAL)   
     Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/BAYAR'), 0, FailureHandling.OPTIONAL)
     Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/UANG_PAS'), 0, FailureHandling.OPTIONAL)
     Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/PROSES_BAYAR'), 0, FailureHandling.OPTIONAL)
@@ -137,7 +134,7 @@ Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SELE
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_3'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/TAMBAH_PESANAN'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/CHEESYDOG'), 0)
-Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BAYAR_ORDERAN_3'), 0)
+Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BAYAR_ORDERAN(3)'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/UANG PAS (1)'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BACK'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/LANJUTKAN (1)'), 0)

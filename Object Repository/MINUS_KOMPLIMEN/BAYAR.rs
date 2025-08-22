@@ -13,7 +13,7 @@
       <name>class</name>
       <type>Main</type>
       <value>android.widget.ImageView</value>
-      <webElementGuid>60790b77-d7c9-4af8-a4c6-186add2d2c72</webElementGuid>
+      <webElementGuid>b598374f-44b6-483f-8a9d-144622d70fd4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -21,7 +21,7 @@
       <name>index</name>
       <type>Main</type>
       <value>16</value>
-      <webElementGuid>d51cfd12-3a8f-40ae-8a95-186513e1bb3f</webElementGuid>
+      <webElementGuid>4e4729e7-20ea-4c89-b8a5-a46331700454</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,7 +29,7 @@
       <name>package</name>
       <type>Main</type>
       <value>com.klopos</value>
-      <webElementGuid>5dcac173-976f-46ce-876e-59120090efb5</webElementGuid>
+      <webElementGuid>61d2923b-fc22-48a2-90a0-31484345934c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,8 +38,8 @@
       <type>Main</type>
       <value>Bayar
 1
-Rp 26.500</value>
-      <webElementGuid>a747cf60-88b6-4e0f-b345-9147098a3e9c</webElementGuid>
+Rp 25.000</value>
+      <webElementGuid>1a26b748-8029-42c3-b988-812e61960600</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@ Rp 26.500</value>
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>e45c0dad-4b06-44b1-a337-d4d6b00285bd</webElementGuid>
+      <webElementGuid>10855201-78b3-48f0-b1d8-64b52dae0693</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@ Rp 26.500</value>
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>3b403557-5916-4136-aa4a-bf0e515b42c0</webElementGuid>
+      <webElementGuid>9f24a48f-86ae-4d9f-93af-fe567d6ccbe6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@ Rp 26.500</value>
       <name>clickable</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>47cffdb7-baaf-48eb-ab2a-0825196fbf8f</webElementGuid>
+      <webElementGuid>f33707e4-ee91-4972-bf9f-ec6c60d1640a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -71,7 +71,7 @@ Rp 26.500</value>
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>67e37541-f5d9-4c61-9d01-297d2d1184c1</webElementGuid>
+      <webElementGuid>53e294a7-6707-42fa-b9ba-42b445a54b2d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -79,7 +79,7 @@ Rp 26.500</value>
       <name>focusable</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>e94cbb28-8e87-4efa-ba55-0defbe4d0d2e</webElementGuid>
+      <webElementGuid>3fec5cce-857a-4dd9-a59f-77711d03dede</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -87,7 +87,7 @@ Rp 26.500</value>
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>79d68f44-97e5-4114-aaf0-27fdbfe96605</webElementGuid>
+      <webElementGuid>f7429a58-9ce5-4be4-afbe-39462a68d29c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -95,7 +95,7 @@ Rp 26.500</value>
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>f76ef98f-11b4-4d3c-8d78-4d7cf84c7f69</webElementGuid>
+      <webElementGuid>6e2cba79-faf5-42a6-9ccf-3d483521a6b9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -103,7 +103,7 @@ Rp 26.500</value>
       <name>long-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>57b604df-1446-48bc-b61f-e49fa17a5a84</webElementGuid>
+      <webElementGuid>5798210f-45c6-43c3-a898-997ad58ccb05</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -111,7 +111,7 @@ Rp 26.500</value>
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>6bfe173a-96ac-47d5-815b-c3940f14a9f3</webElementGuid>
+      <webElementGuid>ed588872-be17-4432-9858-367b9381495a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -119,7 +119,7 @@ Rp 26.500</value>
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>aecda39d-6874-42ce-b9ce-5062b11f7d3f</webElementGuid>
+      <webElementGuid>2e7e4e05-35dc-4ba3-80ab-d98c86257472</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -127,7 +127,7 @@ Rp 26.500</value>
       <name>x</name>
       <type>Main</type>
       <value>1847</value>
-      <webElementGuid>b8b36bdd-a6ce-4857-be3b-c32de2d5865e</webElementGuid>
+      <webElementGuid>a33d1dbf-33ee-4f42-b840-51f4f9841770</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -135,7 +135,7 @@ Rp 26.500</value>
       <name>y</name>
       <type>Main</type>
       <value>1006</value>
-      <webElementGuid>a924f8c1-4ba2-47cc-928e-b47e1a9e83de</webElementGuid>
+      <webElementGuid>4afa6480-e342-49df-8b67-0e1e1f894a8a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -143,7 +143,7 @@ Rp 26.500</value>
       <name>width</name>
       <type>Main</type>
       <value>865</value>
-      <webElementGuid>5473c1dc-eb16-4175-937b-4c498eafb244</webElementGuid>
+      <webElementGuid>f4eb5892-212e-44f7-9b55-dc063d8137ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -151,7 +151,7 @@ Rp 26.500</value>
       <name>height</name>
       <type>Main</type>
       <value>162</value>
-      <webElementGuid>9197f056-4768-45e2-bd4d-8e6e61d7b5a4</webElementGuid>
+      <webElementGuid>74166d07-43e9-4b4c-b5e4-54fd033b15f2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -159,7 +159,7 @@ Rp 26.500</value>
       <name>a11y-focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>0eaf5979-3e78-45fc-a882-724032d23f0d</webElementGuid>
+      <webElementGuid>352c8dad-c9b6-4a3f-8762-694d3adb297d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -167,7 +167,7 @@ Rp 26.500</value>
       <name>a11y-important</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>5d267ee0-1a2e-4904-82ed-ad275732293a</webElementGuid>
+      <webElementGuid>b04f1c7c-698f-45c8-b69f-0df389cbf4f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -175,7 +175,7 @@ Rp 26.500</value>
       <name>bounds</name>
       <type>Main</type>
       <value>[1847,1006][2712,1168]</value>
-      <webElementGuid>4cdd52ae-ffb9-4999-b4f4-c76a9345296a</webElementGuid>
+      <webElementGuid>d77e8b4c-5d4b-4e79-af8a-bec8a0f54159</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -183,7 +183,7 @@ Rp 26.500</value>
       <name>content-invalid</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>0f43e0a1-be4b-4a01-b777-9bd712429b20</webElementGuid>
+      <webElementGuid>bb35b36b-0d22-4634-9682-a282a66a30e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -191,7 +191,7 @@ Rp 26.500</value>
       <name>context-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>5db62661-3f62-4ee5-a4ed-2d661e0f710b</webElementGuid>
+      <webElementGuid>73b64c74-050c-4711-bd2e-e09122c2acc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -199,7 +199,7 @@ Rp 26.500</value>
       <name>dismissable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>ee1d4c21-03a8-427b-81ab-4bc31f87ed8f</webElementGuid>
+      <webElementGuid>02a2feeb-51c0-4e1f-a887-2196d566e69b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -207,7 +207,7 @@ Rp 26.500</value>
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>a852f8d4-748c-4144-ad4e-31dfdebf4a54</webElementGuid>
+      <webElementGuid>62975fad-1a19-4a18-921b-72274cdbd121</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -215,7 +215,7 @@ Rp 26.500</value>
       <name>drawing-order</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>ad709f96-9d02-4997-a79f-1f48d14c4993</webElementGuid>
+      <webElementGuid>ebcd9349-5eea-4dc2-b433-7feba96d91de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -223,7 +223,7 @@ Rp 26.500</value>
       <name>heading</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>ed231a5f-6a10-46cc-b083-2553ef61953e</webElementGuid>
+      <webElementGuid>bc838b17-5a98-49ad-9f47-8a87b65f504b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -231,7 +231,7 @@ Rp 26.500</value>
       <name>live-region</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>579b59d1-26e7-4c89-aaac-ac8cbfdb046a</webElementGuid>
+      <webElementGuid>7abb481f-8d4b-4ce6-9c97-30267ded7185</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -239,7 +239,7 @@ Rp 26.500</value>
       <name>resource-id</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>28dec22c-1541-447c-a1be-06684cbe7d86</webElementGuid>
+      <webElementGuid>4b4306b9-c075-4b41-9d71-92d68d19f487</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -247,7 +247,7 @@ Rp 26.500</value>
       <name>screen-reader-focusable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>379a4921-33b2-4903-9325-1d27986815b0</webElementGuid>
+      <webElementGuid>c9ebe50b-6a1d-4d9d-b930-1f70ed8f7f49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -255,7 +255,7 @@ Rp 26.500</value>
       <name>showing-hint</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>039d862d-72d0-45b7-b765-76037ac9be55</webElementGuid>
+      <webElementGuid>bb614ff0-adf9-4f47-98bb-27c8a7e258f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -263,7 +263,7 @@ Rp 26.500</value>
       <name>text</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>63e5fb95-d217-4a18-aee5-5a953c209afe</webElementGuid>
+      <webElementGuid>693e3281-fb43-4d30-bea1-66a05261f879</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -271,7 +271,7 @@ Rp 26.500</value>
       <name>text-entry-key</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>8a92f47a-a239-4a45-8dcd-9a790a373f11</webElementGuid>
+      <webElementGuid>ff2906a8-9a04-423a-aeda-e8c1c703b2e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -279,18 +279,28 @@ Rp 26.500</value>
       <name>xpath</name>
       <type>Main</type>
       <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.ImageView[13]</value>
-      <webElementGuid>006b4388-bb74-4db4-8ed7-03c2e0ea3ad2</webElementGuid>
+      <webElementGuid>051ff9b4-f015-4949-a73e-7604ef6c65bb</webElementGuid>
    </webElementProperties>
    <locator>Bayar
 1
-Rp 26.500</locator>
+Rp 25.000</locator>
    <locatorCollection>
       <entry>
-         <key>CLASS_NAME</key>
-         <value>android.widget.ImageView</value>
+         <key>IMAGE</key>
+         <value></value>
       </entry>
       <entry>
          <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>Bayar
+1
+Rp 25.000</value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
          <value></value>
       </entry>
       <entry>
@@ -298,17 +308,11 @@ Rp 26.500</locator>
          <value>//*[@class = 'android.widget.ImageView' and @resource-id = '' and (@text = '' or . = '')]</value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector().className(&quot;android.widget.ImageView&quot;).description(&quot;Bayar
-1
-Rp 26.500&quot;).resourceId(&quot;&quot;).packageName(&quot;com.klopos&quot;).enabled(true).clickable(true).longClickable(false).checkable(false).checked(false).focusable(true).focused(false).scrollable(false).selected(false).index(16)</value>
-      </entry>
-      <entry>
-         <key>IOS_PREDICATE_STRING</key>
+         <key>NAME</key>
          <value></value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
+         <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
@@ -316,25 +320,21 @@ Rp 26.500&quot;).resourceId(&quot;&quot;).packageName(&quot;com.klopos&quot;).en
          <value></value>
       </entry>
       <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value>Bayar
-1
-Rp 26.500</value>
+         <key>CLASS_NAME</key>
+         <value>android.widget.ImageView</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.ImageView[13]</value>
       </entry>
       <entry>
-         <key>CUSTOM</key>
-         <value></value>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector().className(&quot;android.widget.ImageView&quot;).description(&quot;Bayar
+1
+Rp 25.000&quot;).resourceId(&quot;&quot;).packageName(&quot;com.klopos&quot;).enabled(true).clickable(true).longClickable(false).checkable(false).checked(false).focusable(true).focused(false).scrollable(false).selected(false).index(16)</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>IOS_CLASS_CHAIN</key>
          <value></value>
       </entry>
    </locatorCollection>

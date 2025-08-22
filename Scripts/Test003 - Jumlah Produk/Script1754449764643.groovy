@@ -23,11 +23,11 @@ Mobile.tap(findTestObject('Object Repository/ERROR_JUMLAH/Kategori Produk'), 0)
 
 Mobile.tap(findTestObject('Object Repository/ERROR_JUMLAH/Produk Paket'), 0)
 
-Mobile.tap(findTestObject('Object Repository/ERROR_JUMLAH/PAKET ENAK'), 0)
+Mobile.tap(findTestObject('Object Repository/ERROR_JUMLAH/MAKAN_SIANG_ENAK'), 0)
 
 Mobile.tap(findTestObject('Object Repository/ERROR_JUMLAH/SIMPAN'), 0)
 
-Mobile.tap(findTestObject('Object Repository/ERROR_JUMLAH/PESAN 3'), 0)
+Mobile.tap(findTestObject('Object Repository/ERROR_JUMLAH/MAKAN_SIANG_ENAK(3)'), 0)
 
 Mobile.tap(findTestObject('Object Repository/ERROR_JUMLAH/TAMBAH 1'), 0)
 
