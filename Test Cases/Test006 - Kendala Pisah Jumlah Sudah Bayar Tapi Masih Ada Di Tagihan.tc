@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Test006 - Kendala Pisah Jumlah Sudah Bayar Tapi Masih Ada Di Tagihan</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>acbddc0f-fa68-4b69-9a01-d10fcbbc2aa0</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Test001 - New error</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>79ba689f-3cfc-4c65-92b0-13a20c0c2277</testCaseGuid>
+</TestCaseEntity>
