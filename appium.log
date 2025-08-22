@@ -63,3 +63,12 @@
 [38;5;23m[49c743be][0m[38;5;86m[HTTP][0m [37m<-- GET /wd/hub/session/49c743be-5367-4d78-9934-ffb4db7ec71b/source [39m[32m200[39m [90m739 ms - 33865[39m [90m[39m
 [38;5;23m[49c743be][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/49c743be-5367-4d78-9934-ffb4db7ec71b/screenshot[39m [90m{}[39m
 [38;5;23m[49c743be][0m[38;5;86m[HTTP][0m [37m<-- GET /wd/hub/session/49c743be-5367-4d78-9934-ffb4db7ec71b/screenshot [39m[32m200[39m [90m310 ms - 443684[39m [90m[39m
+[38;5;23m[49c743be][0m[38;5;-39m[AndroidUiautomator2Driver@8dec][0m Shutting down because we waited 1800 seconds for a command
+[38;5;23m[49c743be][0m[38;5;222m[AppiumDriver@857d][0m Ending session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[38;5;23m[49c743be][0m[38;5;222m[AppiumDriver@857d][0m Removing session '49c743be-5367-4d78-9934-ffb4db7ec71b' from our master session list
+[38;5;23m[49c743be][0m[38;5;-39m[AndroidUiautomator2Driver@8dec][0m Did not get the confirmation of UiAutomator2 server session deletion. Original error: An unknown server-side error occurred while processing the command. Original error: 'DELETE /' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+[38;5;23m[49c743be][0m[38;5;-39m[AndroidUiautomator2Driver@8dec][0m Unable to force stop app: Error executing adbExec. Original error: 'Command 'C:\\Users\\ASUS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s KRT4EEMNOB5H99S8 shell am force-stop com.android.settings' exited with code 1'; Command output: adb.exe: device 'KRT4EEMNOB5H99S8' not found
+
+[38;5;23m[49c743be][0m[38;5;229m[ADB][0m Error sending command, reconnecting device and retrying: forward,--remove,tcp:8249
+[38;5;23m[49c743be][0m[38;5;-39m[AndroidUiautomator2Driver@8dec][0m Unable to remove system port forward: Could not find a connected Android device in 20000ms
+[38;5;23m[49c743be][0m[38;5;-39m[AndroidUiautomator2Driver@8dec][0m Restoring hidden api policy to the device default configuration
