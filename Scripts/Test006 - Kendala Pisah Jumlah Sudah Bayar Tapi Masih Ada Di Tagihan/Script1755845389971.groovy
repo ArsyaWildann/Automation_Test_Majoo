@@ -30,74 +30,54 @@ def scrollTagihan() {
 	Mobile.delay(1)
 }
 
+
+//START APLIKASI
 Mobile.startExistingApplication('com.klopos')
 
-Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PELANGGAN'), 0)
 
+// TAP PELANGGAN
+Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PELANGGAN'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/GILANG'), 0)
 
+//ORDERAN
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/CHEESYDOG'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/FISHCHEESE'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PITIKCHEESE'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/SIMPAN'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/DAFTAR_ORDER'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/TAP_ORDERAN'), 0)
 
+
+// PEMBAYARAN PISAH BAYAR
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/BAYAR'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PISAH_BAYAR'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PISAH_PRODUK'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/LANJUTKAN'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PISAH_CHEESYDOG'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PISAH_FISHCHEESE'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PROSES'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/TRANSFER'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/BCA'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PILIH_BANK'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/SELECT_BANK'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/SIMPANN'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/SIMPAN (1)'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PROSES_BAYAR'), 0)
 scrollTagihan()
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/LUNASI TAGIHAN'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/BACK'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/LANJUTKAN (1)'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/DAFTAR_ORDER'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/TAP_ORDERAN_TAGIHAN'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/BAYAR'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/UANG_PAS'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PROSES_BAYAR (1)'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/SELESAI'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/BACK (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/HAMBURGER'), 0)
 
+//LAPORAN PENJUALAN
+Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/HAMBURGER'), 0)
 Mobile.tap(findTestObject('Object Repository/Kendala Transaksi Pisah Jumlah Masih Ada Produk/PENJUALAN'), 0)
 
 

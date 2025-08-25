@@ -28,8 +28,15 @@ def loginAwal() {
     Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_4'), 0)
     Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_5'), 0)
     Mobile.tap(findTestObject('Object Repository/PIN_PAGE/PIN_6'), 0)
-    Mobile.tap(findTestObject('Object Repository/PIN_PAGE/NANTI'), 0)
+   
 }
+
+// ==== FUNCTION NANTI ====
+def Nanti() {
+	Mobile.tap(findTestObject('Object Repository/PIN_PAGE/NANTI'), 0)
+}
+
+
 
 // ==== FUNCTION BUKA KASIR ====
 def bukaKasir() {
@@ -54,6 +61,12 @@ Mobile.startExistingApplication('com.klopos')
 
 // Jalankan login awal
 loginAwal()
+
+// ==== CEK KONDISI JIKA ADA TOMBOL NANTI ====
+if (Mobile.verifyElementExist(findTestObject('Object Repository/PIN_PAGE/NANTI)'), 3, FailureHandling.OPTIONAL)) {
+	Nanti()
+}	
+
 
 // ==== CEK KONDISI TUTUP KASIR ====
 if (Mobile.verifyElementExist(findTestObject('Object Repository/PIN_TUTUP_KASIR/PIN_TUTUP_KASIR(1)'), 3, FailureHandling.OPTIONAL)) {
