@@ -46,7 +46,7 @@ def scrollOrderan() {
 
 
 // === JALANKAN APLIKASI ===
-Mobile.startExistingApplication('com.klopos')
+
 
  //=== BUKA KATEGORI DAN SCROLL KIRI ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BUTTON_KATEGORI'), 0)

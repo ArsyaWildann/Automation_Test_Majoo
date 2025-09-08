@@ -60,17 +60,7 @@ def tearDownTestCase() {
 	// Put your code here.
 }
 
-class StartAndCloseApp {
-	
-	@BeforeTestSuite
-	def startApp() {
-		println(">>> Start App sekali di awal suite")
-		Mobile.startExistingApplication('com.klopos')
-	}
-
-	@AfterTestSuite
-	def closeApp() {
-		println(">>> Tutup App sekali di akhir suite")
-		Mobile.closeApplication()
-	}
-}
+/**
+ * References:
+ * Groovy tutorial page: http://docs.groovy-lang.org/next/html/documentation/
+ */

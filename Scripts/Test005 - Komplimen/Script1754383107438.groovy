@@ -29,7 +29,7 @@ import io.appium.java_client.android.nativekey.KeyEvent as KeyEvent
 // ----------------------
 // SCRIPT UTAMA
 // ----------------------
-Mobile.startExistingApplication('com.klopos')
+
 
 // Pilih produk dan bayar
 Mobile.tap(findTestObject('Object Repository/MINUS_KOMPLIMEN/CHEESY_DOG'), 0)
