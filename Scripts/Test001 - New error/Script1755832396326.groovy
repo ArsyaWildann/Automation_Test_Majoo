@@ -16,11 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
+Mobile.startExistingApplication('com.klopos')
 
-
- //=== BUKA KATEGORI DAN SCROLL KIRI ===
+//=== BUKA KATEGORI DAN SCROLL KIRI ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BUTTON_KATEGORI'), 0)
+
 scrollKiriLayar()
 
 // === TAP KATEGORI CHEESE FOOD (TANPA SCROLL LAGI SETELAHNYA) ===
@@ -34,42 +36,58 @@ scrollTengahLayar()
 
 // === TAMBAH EKSTRA BAHAN & SIMPAN ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/EKSTRA BAHAN'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SIMPAN'), 0)
 
 // === PILIH PRODUK-PRODUK ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/CHEESYDOG'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/FISHCHEESE'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/JELATACHEESE'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/JURAGANCHEESE'), 0)
 
 scrollTengahLayar()
+
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/NIGRATCHEESE'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/PITIKCHEESE'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SULTANCHEESE'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/SIMPAN (1)'), 0)
 
-
 //=== CEK KONDISI DELETE ===
-
 if (Mobile.verifyElementExist(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/DAFTAR_ORDER_2'), 2, FailureHandling.OPTIONAL)) {
-    println("Data orderan lama ditemukan, proses delete...")
+    println('Data orderan lama ditemukan, proses delete...')
 
     Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/DAFTAR_ORDER_2'), 0, FailureHandling.OPTIONAL)
-    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/PESANAN_2'), 0, FailureHandling.OPTIONAL)   
-    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/BAYAR'), 0, FailureHandling.OPTIONAL)
-    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/UANG_PAS'), 0, FailureHandling.OPTIONAL)
-    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/PROSES_BAYAR'), 0, FailureHandling.OPTIONAL)
-    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/SELESAI'), 0, FailureHandling.OPTIONAL)
-	Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/BACK'), 0, FailureHandling.OPTIONAL)
 
-    println("Proses delete selesai.")
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/PESANAN_2'), 0, FailureHandling.OPTIONAL)
+
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/BAYAR'), 0, FailureHandling.OPTIONAL)
+
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/UANG_PAS'), 0, FailureHandling.OPTIONAL)
+
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/PROSES_BAYAR'), 0, FailureHandling.OPTIONAL)
+
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/SELESAI'), 0, FailureHandling.OPTIONAL)
+
+    Mobile.tap(findTestObject('Object Repository/DELETE_DAFTAR_ORDER/BACK'), 0, FailureHandling.OPTIONAL)
+
+    println('Proses delete selesai.')
 } else {
-    println("Tidak ada orderan lama, langsung ke orderan pertama...")
+    println('Tidak ada orderan lama, langsung ke orderan pertama...')
+
     Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN 1'), 0, FailureHandling.OPTIONAL)
 }
+
 // === ORDERAN 1 ===
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/DAFTAR ORDER'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/ORDERAN_1'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Kendala_Transaksi_Pisah_Jumlah/BAYAR'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Pisah_jumlah/Pisah_bayar'), 0)
@@ -93,6 +111,26 @@ Mobile.tap(findTestObject('Object Repository/Pisah_jumlah/Uang_pas'), 0)
 Mobile.tap(findTestObject('Object Repository/Pisah_jumlah/Bayar'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Pisah_jumlah/Selesai'), 0)
+Mobile.tap(findTestObject('Object Repository/Pisah_jumlah/Total_sisa'), 0)
+
+TestObject totalBayar = findTestObject('Object Repository/Pisah_jumlah/Total_sisa_bayar')
+
+// === CEK ACTUAL VS EXPECTED ===
+def actualValue = Mobile.getAttribute(findTestObject('Object Repository/Pisah_jumlah/Total_sisa_bayar'), 'contentDescription', 
+    5)
+
+def expectedValue = GlobalVariable.expectedValues
+
+if (actualValue == expectedValue) {
+    KeywordUtil.markPassed("✅ Validasi sukses. Nilai sesuai: $actualValue")
+} //--- FUNGSI SCROLL ---
+else {
+    KeywordUtil.markFailed("❌ Validasi gagal. Expected: $expectedValue, Actual: $actualValue")
+}
+
+
+
+
 
 
 
